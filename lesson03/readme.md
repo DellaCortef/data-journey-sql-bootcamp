@@ -29,7 +29,7 @@ INNER JOIN customers c ON o.customer_id = c.customer_id
 WHERE EXTRACT(YEAR FROM o.order_date) = 1996; -- EXTRACT(part FROM date) part can be YEAR, MONTH, DAY, etc.
 ```
 
-Gustavo also brought this implementation
+There is also this implementation:
 
 'WHERE DATE_PART('YEAR', o.order_date) = 1996'
 
